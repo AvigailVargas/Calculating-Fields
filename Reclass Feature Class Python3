@@ -1,0 +1,17 @@
+//Code is in Python 3 Format. This code alone might not work if being used outside of ArcGIS Pro unless you import the necessary modules.
+
+Label = Reclass(!gridcode!)
+
+def Reclass(gridcode):
+    if (gridcode == 7):
+        return "Large Gain"
+    elif (gridcode == 6):
+        return "Medium Gain"
+    elif (gridcode == 5):
+        return "Some Gain"
+    elif (gridcode == 4):
+        return "Some Loss"
+    elif (gridcode == 3):
+        return "Medium Loss"
+    elif (gridcode == 2):
+        return "Large Loss"
